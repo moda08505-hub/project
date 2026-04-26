@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Booking</title>
+</head>
+
+<body>
+
+<header>
+  <h1>Book a Visit</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="sites.html">Sites</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="booking.html">Booking</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<br><br><br>
+
+<table border="1" style="margin:auto;">
+<tr>
+  <th>Place</th>
+  <th>Price</th>
+</tr>
+<tr>
+  <td>Pyramids</td>
+  <td>$50</td>
+</tr>
+<tr>
+  <td>Karnak</td>
+  <td>$20</td>
+</tr>
+<tr>
+  <td>Abu simbel</td>
+  <td>$30</td>
+</tr>
+</table>
+
+<br><br>
+
+<section style="text-align:center;">
+  <form onsubmit="return bookVisit()">
+
+    <input type="text" id="visitor" placeholder="Your Name"><br><br>
+
+    <select id="place">
+      <option>Pyramids</option>
+      <option>Karnak</option>
+      <option>Abu simbel</option>
+    </select><br><br>
+
+    <button type="submit">Book</button>
+
+  </form>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+<style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  color: white;
+}
+
+/* الهيدر */
+header {
+  background-color: #c9a23f; /* دهبي */
+  text-align: center;
+  padding: 20px;
+}
+nav a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* الجدول */
+table {
+  margin-top: 30px;
+  border-collapse: collapse;
+  width: 60%;
+  background-color: #1e1e1e;
+}
+
+th {
+  background-color: #e4e4e4;
+  color: black;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+/* الفورم */
+form {
+  background-color: #1e1e1e;
+  display: inline-block;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: 0 0 10px rgba(201, 162, 63, 0.4);
+}
+
+/* inputs و select */
+input, select {
+  width: 220px;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* الزرار */
+button {
+  width: 240px;
+  padding: 10px;
+  background-color: #c9a23f;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #e0b94f;
+}
+
+/* توسيط الجدول */
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>

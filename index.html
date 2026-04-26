@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Egyptian Antiquities</title>
+
+
+</head>
+<body class="light">
+
+<header>
+  <h1>Egyptian Antiquities</h1>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="sites.html">Sites</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="booking.html">Booking</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<br><br><br>
+
+<section class="about">
+  <h2>Discover Ancient Egypt</h2>
+  <p>
+    Explore the greatest civilization in history
+  </p>
+</section>
+<section class="cards">
+
+  <article class="card">
+    <img src="Pyramids.jpeg" width="100%">
+    <h3>Pyramids</h3>
+    <p>One of the seven wonders of the world.</p>
+  </article>
+
+  <article class="card">
+    <img src="Temples.jpeg" width="100%">
+    <h3>Temples</h3>
+    <p>Beautiful ancient temples full of history.</p>
+  </article>
+
+  <article class="card">
+    <img src="Museums.jpeg" width="100%">
+    <h3>Museums</h3>
+    <p>Discover artifacts and treasures.</p>
+  </article>
+
+</body>
+</html>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* خلفية */
+body {
+  background: #fcfcfc; 
+}
+
+/* Header */
+header {
+  background: #5C4033; /* بني غامق */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Navbar */
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #f5f1e6;
+  text-decoration: none;
+  margin: 0 12px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #D2B48C; /* دهبي فاتح */
+}
+
+/* About */
+.about {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.about h2 {
+  font-size: 34px;
+  color: #5C4033;
+  margin-bottom: 10px;
+}
+
+.about p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Cards Container */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* Card */
+.card {
+  background: #000000;
+  width: 260px;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.4s;
+}
+
+/* Hover Effect */
+.card:hover {
+  transform: translateY(-12px) scale(1.03);
+}
+
+/* Image */
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+
+.card h3 {
+  margin: 12px;
+  color: #5C4033;
+}
+
+/* Text */
+.card p {
+  padding: 0 12px 20px;
+  color: #666;
+}
+
+</style>

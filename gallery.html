@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gallery</title>
+
+</head>
+
+<body>
+
+<header>
+  <h1>Gallery</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="sites.html">Sites</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="booking.html">Booking</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- فيديو -->
+<video controls width="300">
+  <source src="Video.mp4">
+</video>
+
+<br><br>
+
+<article>
+  <img src="image.3.jpeg" >
+</article>
+
+<br><br>
+
+<img src="map.jpeg" usemap="#map" width="300">
+
+<map name="map">
+  <area shape="rect" coords="0,0,100,100" href="sites.html">
+</map>
+
+</body>
+</html>
+<style>
+  body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #c9a23f; /* دهبي */
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* نعمل Layout */
+article {
+  display: inline-block;
+  margin: 20px;
+}
+
+/* الصور */
+img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #c9a23f;
+}
+/* اللينكات */
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* الفيديو */
+video {
+  border: 2px solid #c9a23f;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* نخلي العناصر جنب بعض */
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+</style>
