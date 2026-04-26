@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ancient Sites</title>
+
+</head>
+
+<body>
+
+<header>
+  <h1>Ancient Sites</h1>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="sites.html">Sites</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="booking.html">Booking</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+
+<section style="text-align:center; margin:20px;">
+  <input type="text" id="search" placeholder="Search..." onkeyup="search()">
+
+  <br><br>
+
+  <button onclick="gridView()">Grid</button>
+  <button onclick="listView()">List</button>
+</section>
+
+<section id="container" class="grid">
+
+  <article class="card">
+    <h3>Pyramids of Giza</h3>
+    <p>Famous ancient pyramids.</p>
+    
+   <img src="Pyramids of Giza.jpeg"> 
+  </article>
+
+  <article class="card">
+    <h3>Karnak Temple</h3>
+    <p>Huge temple complex.</p>
+    <br>
+    <img src="Karnak Temple.jpeg" >
+  </article>
+
+  <article class="card">
+    <h3>Luxor Temple</h3>
+    <p>Beautiful historical site.</p>
+    <br>
+    <img src="Luxor Temple.jpeg">
+  </article>
+
+  <article class="card">
+    <h3>Valley of the Kings</h3>
+    <p>Royal tombs of pharaohs.</p>
+    <br>
+    <img src="Valley of the Kings.jpeg">
+  </article>
+
+</section>
+
+
+</body>
+</html>
+<style>
+
+/* Reset بسيط */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* خلفية الصفحة */
+body {
+  background-color: #f5f5f5;
+}
+
+/* الهيدر */
+header {
+  background-color: #222;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+/* اللينكات */
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* البحث و الأزرار */
+section input {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+section button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  background-color: #5C4033;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+section button:hover {
+  background-color: #5C4033;
+}
+
+/* الجريد */
+.grid {
+
+  display: grid;
+   grid-template-columns: repeatfit( minmax(2, 1fr));
+  gap: 20px;
+}
+
+/* الليست */
+.list {
+  display: block;
+}
+
+/* الكروت */
+.card {
+  background-color: white;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* الصور */
+.card img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+/* عنوان الكارت */
+.card h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* الوصف */
+.card p {
+  color: #666;
+}
+</style>
